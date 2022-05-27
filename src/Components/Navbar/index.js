@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Navbar.css"
+import "./styles.css"
 import { motion } from 'framer-motion'
 
 const Navbar = () => {

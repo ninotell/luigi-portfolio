@@ -1,8 +1,11 @@
+nav{
+    z-index: 50;
+}
 .toggle-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: flex-end;
+    align-items: flex-end;    
 }
 
 .n-toggle {
@@ -11,6 +14,7 @@
     width: 33px;
     margin: 6px;
     cursor: pointer;
+    z-index: 55;
 }
 
 .n-toggle.open>:nth-child(1) {
@@ -41,7 +45,7 @@
 
 .n-list {
     list-style: none;
-    padding-inline-start: 0;
+    padding-inline-start: 0;    
 }
 
 .n-list>* {
