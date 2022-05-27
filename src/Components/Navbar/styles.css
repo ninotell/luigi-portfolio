@@ -46,29 +46,33 @@ nav{
 .n-list {
     list-style: none;
     padding-inline-start: 0;    
+    
 }
 
 .n-list>* {
-    padding: 12px;
-    border-bottom: solid .5px rgb(121, 121, 121);
+    padding: 40px 12px;
+    font-size: 24px;
     color: #d8d8d8;
     cursor: pointer;
 }
 
 .n-list>*:hover{
-    color:#ffffff;
-    border-radius: 6px;
-    transition: border-radius .15s;
+    color: #fff;
 }
 
 
 nav {
     position: absolute;
+    padding-top: 80px;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, .9);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }

@@ -26,20 +26,10 @@ const worksItemsArray = [
 const workitemVariants = {
 
     initial: {
-        x: "100vw"
+        scale: .5
     },
     final: {
-        x: 0
-    }
-
-}
-const workitemVariants2 = {
-
-    initial: {
-        x: "-100vw"
-    },
-    final: {
-        x: 0
+        scale: 1
     }
 
 }
@@ -61,9 +51,14 @@ const Works = ({ setShowModal, setWorkCategory }) => {
                         key={i.title}
                         onClick={(e) => handleWorkItemClick(e, i.title)}
                         initial="initial"
-                        visible="final"
-                        variants={index % 2 === 0 ? workitemVariants : workitemVariants2 }
+                        whileInView="final"
+                        variants={workitemVariants}
                         animate="final"
+                        transition={{ duration: .8 }}
+                        whileTap={{
+                            scale: 0.9,
+                            transition: { duration: .1 },
+                        }}                     
                     >
                         <WorkItem
                             title={i.title}
