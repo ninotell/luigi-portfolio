@@ -38,7 +38,7 @@ const WorkItemModal = ({ showModal, setShowModal, workCategory }) => {
 
     for (let i = 1; i < 12; i++) {
         images.push({
-            url: `/assets/${workCategory}/thumbnail/${workCategory} (${i}).jpg`
+            url: `${process.env.PUBLIC_URL}/assets/${workCategory}/thumbnail/${workCategory} (${i}).jpg`
         })
     }
     
@@ -70,13 +70,13 @@ const WorkItemModal = ({ showModal, setShowModal, workCategory }) => {
                         <Carousel
                             className='carousel'
                             showThumbs={false}
-                            // dynamicHeight={true}
                             infiniteLoop={true}
                             centerMode={true}
                             centerSlidePercentage={100}
                             dynamicHeight={true}
+                            showIndicators={false}
                         >
-                            {images.map(i => <div><img style={{ maxHeight: (viewportHeight * 0.95) }} alt='prueba' src={i.url} /></div>)}
+                            {images.map((i, index) => <div key={i}><img style={{ maxHeight: (viewportHeight * 0.95) }} alt={`imagen-${index}`} src={i.url} /></div>)}
                         </Carousel>
 
                     </motion.div>

@@ -1,0 +1,21 @@
+.contactListItem {
+    margin: 20px 0;
+    display: flex;
+    /* border: 1px solid white; */
+}
+
+.contactListItem:hover .icon,
+.contactListItem:hover a {
+    color: rgb(255, 255, 255);
+    transform: scale(1.02)
+}
+
+.contactListItem a,
+.contactListItem .icon {
+    color: rgb(230, 224, 224);
+}
+
+.contactListItem .icon {
+    margin: 0 10px 0 5px;
+    font-size: 20px;
+}

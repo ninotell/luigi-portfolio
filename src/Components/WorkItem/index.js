@@ -9,8 +9,17 @@ const WorkItem = ({ title, background }) => {
                 backgroundImage: `url("${background}")`,
             }}
         >
-            <span className='workItem-title'>{title}</span>
-            {/* <img className='workItem-background' src={background} alt={`${title}`}/> */}
+            <span className='workItem-title'>{
+                title === "weddings"
+                    ? "Bodas"
+                    : title === "portraits"
+                        ? "retratos"
+                        : title === "advertising"
+                            ? "publicidad"
+                            : title === "discos"
+                                ? "discotecas"
+                                : ""
+            }</span>
             <span className='workItem-button'>Toca para explorar</span>
         </div>
     )

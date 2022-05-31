@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   color: white;
-  --borderRadius: 20px;
+  --borderRadius: 15px;
   font-family: sans-serif;
+  overflow-x: hidden;
 }

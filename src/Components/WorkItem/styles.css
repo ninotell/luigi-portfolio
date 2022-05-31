@@ -7,10 +7,9 @@
     justify-content: space-between;
     border-radius: var(--borderRadius);
     position: relative;
-    /* background-image: url("../../assets/advertising/thumbnail/advertising (1).jpg"); */
     background-position: center;
-    background-size: cover;
-    /* padding-top: ; */
+    background-size: cover;    
+    z-index: 0;
 }
 
 .workItem-container::after {
@@ -20,7 +19,7 @@
     padding: inherit;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.501);
+    background-color: rgba(0, 0, 0, 0.601);
 }
 
 

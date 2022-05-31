@@ -2,23 +2,24 @@ import React from 'react'
 import WorkItem from '../WorkItem'
 import "./styles.css"
 import { motion } from 'framer-motion'
+import SectionTitle from '../SectionTitle'
 
 const worksItemsArray = [
     {
         title: "weddings",
-        background: "/assets/weddings/thumbnail/weddings (1).jpg"
+        background: process.env.PUBLIC_URL + "/assets/weddings/thumbnail/weddings (1).jpg"
     },
     {
         title: "discos",
-        background: "/assets/discos/thumbnail/discos (1).jpg"
+        background: process.env.PUBLIC_URL + "/assets/discos/thumbnail/discos (1).jpg"
     },
     {
         title: "portraits",
-        background: "/assets/portraits/thumbnail/portraits (1).jpg"
+        background: process.env.PUBLIC_URL + "/assets/portraits/thumbnail/portraits (1).jpg"
     },
     {
         title: "advertising",
-        background: "/assets/advertising/thumbnail/advertising (1).jpg"
+        background: process.env.PUBLIC_URL + "/assets/advertising/thumbnail/advertising (1).jpg"
     },
 ]
 
@@ -26,15 +27,17 @@ const worksItemsArray = [
 const workitemVariants = {
 
     initial: {
-        scale: .5
+        scale: .8,
+        opacity: 0
     },
     final: {
-        scale: 1
+        scale: 1,
+        opacity: 1
     }
 
 }
 
-const Works = ({ setShowModal, setWorkCategory }) => {
+const Works = ({ id, setShowModal, setWorkCategory }) => {
 
 
     const handleWorkItemClick = (e, title) => {
@@ -44,7 +47,9 @@ const Works = ({ setShowModal, setWorkCategory }) => {
     }
 
     return (
-        <div className='Works'>
+        <div id={id} className='Works'>
+
+            <SectionTitle content={"Mis trabajos"} />
             <div className='worksItems-container'>
                 {worksItemsArray.map((i, index) => (
                     <motion.a
@@ -52,11 +57,11 @@ const Works = ({ setShowModal, setWorkCategory }) => {
                         onClick={(e) => handleWorkItemClick(e, i.title)}
                         initial="initial"
                         whileInView="final"
+                        viewport={{once: true}}
                         variants={workitemVariants}
-                        animate="final"
-                        transition={{ duration: .8 }}
+                        transition={{ duration: .5 }}
                         whileTap={{
-                            scale: 0.9,
+                            scale: 0.95,
                             transition: { duration: .1 },
                         }}                     
                     >

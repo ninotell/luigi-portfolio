@@ -1,19 +1,21 @@
-nav{
-    z-index: 50;
-}
+
 .toggle-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: end;
-    align-items: flex-end;    
+    align-items: flex-end;
+
 }
 
 .n-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
     display: flex;
     flex-direction: column;
     width: 33px;
     margin: 6px;
-    cursor: pointer;
+    cursor: pointer;    
     z-index: 55;
 }
 
@@ -31,7 +33,9 @@ nav{
 
 .n-toggle>* {
     transition: transform .2s, opacity .2s;
+    
 }
+
 
 .n-toggle span {
     width: 35px;
@@ -40,13 +44,12 @@ nav{
     position: relative;
     background: #ffffff;
     border-radius: 3px;
-    z-index: 1;
 }
 
 .n-list {
     list-style: none;
-    padding-inline-start: 0;    
-    
+    padding-inline-start: 0;
+
 }
 
 .n-list>* {
@@ -54,15 +57,17 @@ nav{
     font-size: 24px;
     color: #d8d8d8;
     cursor: pointer;
+    
+    letter-spacing: 5px;
 }
 
-.n-list>*:hover{
+.n-list>*:hover {
     color: #fff;
 }
 
 
 nav {
-    position: absolute;
+    position: fixed;
     padding-top: 80px;
     top: 0;
     left: 0;
@@ -70,9 +75,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .95);
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    
+    z-index: 50;
 }
+

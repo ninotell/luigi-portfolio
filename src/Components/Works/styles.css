@@ -1,8 +1,10 @@
 .Works {
     padding: 50px 150px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 90vh;    
 }
 
 .worksItems-container {
