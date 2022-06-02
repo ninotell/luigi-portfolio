@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/luigi-portfolio/static/css/main.3c91accb.css",
-    "main.js": "/luigi-portfolio/static/js/main.11834147.js",
-    "static/media/Reel.mp4": "/luigi-portfolio/static/media/Reel.21444aca22b5e408b46f.mp4",
+    "main.css": "/luigi-portfolio/static/css/main.4df1faad.css",
+    "main.js": "/luigi-portfolio/static/js/main.fb119ccb.js",
+    "static/media/Reel (2).mp4": "/luigi-portfolio/static/media/Reel (2).5934fc674af36d119519.mp4",
+    "static/media/Reel (5).mp4": "/luigi-portfolio/static/media/Reel (5).02bad90159a2a68c9543.mp4",
+    "static/media/Reel (1).mp4": "/luigi-portfolio/static/media/Reel (1).0e8084f13f6229bd3b57.mp4",
+    "static/media/Reel (4).mp4": "/luigi-portfolio/static/media/Reel (4).f7052e19748d3638de80.mp4",
+    "static/media/Reel (3).mp4": "/luigi-portfolio/static/media/Reel (3).61ffaabb05ba417ec57b.mp4",
     "index.html": "/luigi-portfolio/index.html",
-    "main.3c91accb.css.map": "/luigi-portfolio/static/css/main.3c91accb.css.map",
-    "main.11834147.js.map": "/luigi-portfolio/static/js/main.11834147.js.map"
+    "main.4df1faad.css.map": "/luigi-portfolio/static/css/main.4df1faad.css.map",
+    "main.fb119ccb.js.map": "/luigi-portfolio/static/js/main.fb119ccb.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c91accb.css",
-    "static/js/main.11834147.js"
+    "static/css/main.4df1faad.css",
+    "static/js/main.fb119ccb.js"
   ]
 }
