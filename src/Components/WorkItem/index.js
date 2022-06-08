@@ -18,7 +18,9 @@ const WorkItem = ({ title, background }) => {
                             ? "publicidad"
                             : title === "discos"
                                 ? "discotecas"
-                                : ""
+                                : title === "gastronomy"
+                                    ? "gastronomía"
+                                    : `${title}`
             }</span>
             <span className='workItem-button'>Toca para explorar</span>
         </div>

@@ -92,7 +92,10 @@ const Navbar = () => {
                             className='n-item'
                             variants={navBarItemsVariants}
                             transition={{
-                                type: 'just'
+                                type: 'just',
+                                opacity:{
+                                    delay: .25
+                                }
                             }}
                         >
                             <Link

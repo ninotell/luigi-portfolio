@@ -1,5 +1,5 @@
 .contactListItem {
-    margin: 20px 0;
+    margin: 23px 0;
     display: flex;
     /* border: 1px solid white; */
 }
@@ -9,6 +9,10 @@
     color: rgb(255, 255, 255);
     transform: scale(1.02)
 }
+.contactListItem a{
+    display: flex;
+
+}
 
 .contactListItem a,
 .contactListItem .icon {
@@ -16,6 +20,6 @@
 }
 
 .contactListItem .icon {
-    margin: 0 10px 0 5px;
+    margin: 0 12px 0 5px;
     font-size: 20px;
 }

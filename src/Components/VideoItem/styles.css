@@ -1,0 +1,38 @@
+.videoContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2a2a;
+    border-radius: var(--borderRadius);
+    margin-bottom: 30px;
+}
+
+.videoContainer video[poster] {
+    object-fit: cover;
+}
+
+.videoContainer video {
+    /* margin-top: 50px; */
+    width: 330px;
+    aspect-ratio: 9/16;
+    border-radius: var(--borderRadius);
+}
+
+.videoContainer .video-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.videoContainer .video-location {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.videoContainer .video-category {
+    text-transform: uppercase;
+    color: rgb(152, 152, 152);
+    font-size: 18px;
+    margin-top: -15px;
+}

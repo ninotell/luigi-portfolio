@@ -54,7 +54,7 @@ function Contact({ id }) {
         }}
       >
         <ul>
-          <ContactListItem content={"Alicante, España"} icon={faLocation} />
+          <ContactListItem href="https://maps.google.com/maps?ll=38.357841,-0.472524&z=11&t=m&hl=es&gl=AR&mapclient=embed&q=Alicante%20(Alacant)%20Alicante%20Espa%C3%B1a" content={"Alicante, España"} icon={faLocation} />
           <ContactListItem href="https://wa.me/34661131235" content={"+34 661-131235"} icon={faWhatsapp} />
           <ContactListItem href="mailto:luigitell82@gmail.com" content={"luigitell82@gmail.com"} icon={faEnvelope} />
           <ContactListItem href="https://www.instagram.com/luigi_tell/" content={"@luigi_tell"} icon={faInstagram} />

@@ -5,3 +5,13 @@
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
+input,
+textarea,
+button,
+select,
+a,
+li {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}

@@ -14,7 +14,8 @@ function App() {
   return (
     <div className="App">
       <Name/>
-      <WorkItemModal workCategory={workCategory} showModal={showModal} setShowModal={setShowModal} />
+      {workCategory && (<WorkItemModal workCategory={workCategory} showModal={showModal} setShowModal={setShowModal} />)}
+      
       <Navbar />
       <BackgroundChanger />
       <Works id="section0" setWorkCategory={setWorkCategory} setShowModal={setShowModal} />

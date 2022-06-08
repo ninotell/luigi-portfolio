@@ -32,16 +32,14 @@ const imagescontainer = {
 const WorkItemModal = ({ showModal, setShowModal, workCategory }) => {
 
     let viewportHeight = window.innerHeight;
-    const images = [
+    const images = []
 
-    ]
-
-    for (let i = 1; i < 12; i++) {
+    for (let i = 1; i <= workCategory.imgQty; i++) {
         images.push({
-            url: `${process.env.PUBLIC_URL}/assets/${workCategory}/thumbnail/${workCategory} (${i}).jpg`
+            url: `${process.env.PUBLIC_URL}/assets/${workCategory.title}/thumbnail/${workCategory.title} (${i}).jpg`
         })
     }
-    
+
     const handleCloseModal = (e) => {
         e.preventDefault()
         setShowModal(false)
@@ -50,6 +48,7 @@ const WorkItemModal = ({ showModal, setShowModal, workCategory }) => {
     return (
         <AnimatePresence
             exitBeforeEnter>
+
             {showModal && (
                 <motion.div
                     className='WorkItemModal'
@@ -58,6 +57,7 @@ const WorkItemModal = ({ showModal, setShowModal, workCategory }) => {
                     variants={modalbackground}
                     exit="hidden"
                 >
+                    <a className='closeModal-function' onClick={(e) => handleCloseModal(e)} > </a>
                     <div className='closeModal-button'>
                         <button onClick={(e) => handleCloseModal(e)}>X</button>
                     </div>
@@ -76,7 +76,20 @@ const WorkItemModal = ({ showModal, setShowModal, workCategory }) => {
                             dynamicHeight={true}
                             showIndicators={false}
                         >
-                            {images.map((i, index) => <div key={i}><img style={{ maxHeight: (viewportHeight * 0.95) }} alt={`imagen-${index}`} src={i.url} /></div>)}
+                            {images.map((i, index) =>
+                                <div
+                                    key={i}
+                                >
+                                    <img style={{ maxHeight: (viewportHeight * 0.95) }} alt={`imagen-${index}`} src={i.url} />
+                                    <a
+                                        href={i.url}
+                                        target='_blank'
+                                        rel='noreferrer'
+                                    >
+                                    </a>
+                                </div>
+
+                            )}
                         </Carousel>
 
                     </motion.div>
