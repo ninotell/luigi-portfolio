@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/luigi-portfolio/static/css/main.656d711b.css",
-    "main.js": "/luigi-portfolio/static/js/main.8fda31d2.js",
+    "main.css": "/luigi-portfolio/static/css/main.f8a6da5b.css",
+    "main.js": "/luigi-portfolio/static/js/main.ec8ead01.js",
+    "static/media/Reel Parabarap.webm": "/luigi-portfolio/static/media/Reel Parabarap.c44b48c610151db3919b.webm",
+    "static/media/Reel Hogueras.webm": "/luigi-portfolio/static/media/Reel Hogueras.df731723f6091ce45e38.webm",
     "static/media/Reel (1).webm": "/luigi-portfolio/static/media/Reel (1).2210510a178b50ef13f2.webm",
     "static/media/Reel (2).webm": "/luigi-portfolio/static/media/Reel (2).8f5a51a3594246e5d689.webm",
     "static/media/Reel (5).webm": "/luigi-portfolio/static/media/Reel (5).d1b9e1a7dfbfb1769549.webm",
-    "static/media/Reel (2).mp4": "/luigi-portfolio/static/media/Reel (2).2c068ab3bac7f0c1c683.mp4",
     "static/media/Reel (4).webm": "/luigi-portfolio/static/media/Reel (4).c7779a14331e79095f79.webm",
     "static/media/Reel (3).webm": "/luigi-portfolio/static/media/Reel (3).54aae43deb0581d8bf65.webm",
-    "static/media/Reel (5).mp4": "/luigi-portfolio/static/media/Reel (5).41094c5339f73d87757e.mp4",
-    "static/media/Reel (1).mp4": "/luigi-portfolio/static/media/Reel (1).42813d4e16dec3d0646c.mp4",
-    "static/media/Reel (3).mp4": "/luigi-portfolio/static/media/Reel (3).7261ccc1c8fb001beb60.mp4",
-    "static/media/Reel (4).mp4": "/luigi-portfolio/static/media/Reel (4).483d84110d5e98061905.mp4",
+    "static/media/posterLeo.jpg": "/luigi-portfolio/static/media/posterLeo.f42d979b50b9df59ec3f.jpg",
+    "static/media/posterParabarap.jpg": "/luigi-portfolio/static/media/posterParabarap.4442d82f542f043f1ce5.jpg",
+    "static/media/posterDickens.jpg": "/luigi-portfolio/static/media/posterDickens.56abfc60272166fc594f.jpg",
+    "static/media/posterVer.jpg": "/luigi-portfolio/static/media/posterVer.4a01847e0469ba5dee58.jpg",
     "index.html": "/luigi-portfolio/index.html",
-    "main.656d711b.css.map": "/luigi-portfolio/static/css/main.656d711b.css.map",
-    "main.8fda31d2.js.map": "/luigi-portfolio/static/js/main.8fda31d2.js.map"
+    "main.f8a6da5b.css.map": "/luigi-portfolio/static/css/main.f8a6da5b.css.map",
+    "main.ec8ead01.js.map": "/luigi-portfolio/static/js/main.ec8ead01.js.map"
   },
   "entrypoints": [
-    "static/css/main.656d711b.css",
-    "static/js/main.8fda31d2.js"
+    "static/css/main.f8a6da5b.css",
+    "static/js/main.ec8ead01.js"
   ]
 }
